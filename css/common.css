@@ -26,9 +26,12 @@ button {
   background-size: cover;
   width: 250px;
   height: 250px;
+  margin-left: 30px;
 }
 .gallery {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
 }
