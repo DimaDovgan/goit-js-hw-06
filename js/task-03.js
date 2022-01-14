@@ -14,7 +14,14 @@ const images = [
 ];
 const galleryUl = document.querySelector(".gallery");
 const galleryliArr = images.map(({ url, alt }) => {
-  return `<li><img src="${url}" alt="${alt}" class="img-task-3"></li>`
+  return `<li><img src="${url}" alt="${alt}" class="img-task-3" width = "250px" height = "250px""></li>`
 }).join("");
+
+galleryUl.style.display = "flex";
+galleryUl.style.alignItems = "center";
+galleryUl.style.justifyContent = "center";
+galleryUl.style.listStyle = "none";
+galleryUl.style.flexWrap = "wrap";
+
 console.log(galleryliArr);
 galleryUl.insertAdjacentHTML("beforeend", galleryliArr);
